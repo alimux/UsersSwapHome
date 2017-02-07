@@ -1,5 +1,6 @@
 ressources/hibernate.cfg.xml
 hibernate/
 build/
+update.sh
 
 *.class

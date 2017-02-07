@@ -1,4 +1,9 @@
 package users.db;
+
+import housing.db.Housing;
+import housingExchange.db.HousingExchange;
+import java.util.Set;
+
 /*----------------------------------
  class fake DB
  ----------------------------------*/
@@ -47,6 +52,16 @@ public class User {
     private String countryUser;
 
     /**
+     * for housing exchanges
+     */
+    private Set<HousingExchange> exchanges;
+
+    /**
+     * for housings
+     */
+    private Set<Housing> housings;
+
+    /**
      * constructor Build a new user
      *
      * @param id
@@ -72,7 +87,7 @@ public class User {
      * @param city
      * @param mail
      * @param passwd
-     * @param country 
+     * @param country
      */
     public User(String name, String firstName, String adress, int zipCode, String city, String mail, String passwd, String country) {
         nameUser = name;
@@ -88,7 +103,7 @@ public class User {
     /**
      * constructor using to authentication
      * @param mail
-     * @param passwd 
+     * @param passwd
      */
     public User(String mail, String passwd) {
         emailUser = mail;
@@ -96,7 +111,7 @@ public class User {
 
     }
 
-    //getters 
+    //getters
 
     /**
      * Returns the nameUser of this user / Customer.
@@ -243,4 +258,19 @@ public class User {
         return cityUser;
     }
 
+    public Set<HousingExchange> getExchanges() {
+        return exchanges;
+    }
+
+    public void setExchanges(Set<HousingExchange> exchanges) {
+        this.exchanges = exchanges;
+    }
+    
+    public Set<Housing> getHousings() {
+        return housings;
+    }
+
+    public void setHousings(Set<Housing> housings) {
+        this.housings = housings;
+    }
 }

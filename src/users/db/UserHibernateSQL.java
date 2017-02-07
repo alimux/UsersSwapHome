@@ -1,6 +1,7 @@
 package users.db;
 
 import java.io.Serializable;
+import java.util.Set;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
