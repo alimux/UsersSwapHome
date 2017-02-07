@@ -8,11 +8,11 @@
     <class name="users.db.User" table="Users">
         <id name="emailUser" />
         <set name="exchanges" inverse="true" cascade="all" lazy="false">
-            <key column="customerEmail" not-null="true" />
+            <key column="emailUser" not-null="true" />
             <one-to-many class="housingExchange.db.HousingExchange"/>
         </set>
         <set name="housings" inverse="true" cascade="all" lazy="false">
-            <key column="customerEmail" not-null="true" />
+            <key column="emailUser" not-null="true" />
             <one-to-many class="housing.db.Housing"/>
         </set>
         <property name="nameUser" />
