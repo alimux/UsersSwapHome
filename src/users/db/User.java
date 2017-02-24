@@ -12,7 +12,7 @@ import java.util.Set;
  * A class reprensenting a Customer / user A user consists of a name, first
  * name, adress, Zip code, city, email, passwordUser
  *
- * @author Alexandre DUCREUX
+ * @author Alexandre DUCREUX & Logan Lepage
  * @since 4 novembre 2016
  */
 

@@ -4,11 +4,13 @@ import java.io.Serializable;
 import java.util.Set;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-
+/**
+ * Class wich communicate with Sql database
+ * @author Alexandre DUCREUX & Logan Lepage
+ */
 public class UserHibernateSQL implements IUserDB {
 
     /**
-     * Class wich communicate with Sql database
      * Create a session factory
      */
     private SessionFactory sessionFactory;

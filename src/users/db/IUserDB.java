@@ -5,6 +5,7 @@ package users.db;
  *
  * @author Alexandre DUCREUX & Logan Lepage Universit&eacute; de Caen Basse-Normandie, France.
  * @november 2016
+ * @see https://github.com/alimux/UsersSwapHome
  */
 import java.util.List;
 
